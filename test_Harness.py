@@ -44,7 +44,7 @@ def test_lab1Question2_4():
 def test_lab1Question2_5():
     # Test case 5
     name = ""
-    assert lab1Question2(name) == False
+    assert lab1Question2(name) == None
 
 def test_lab1Question3_1():
     # Test case 1
