@@ -1,11 +1,13 @@
 def lab1Question1(input_gb):
     # Convert the input of a number of gigabytes to the number of bytes
-    num_bytes = None
+    num_bytes = input_gb * 1024**3
     # Do the work here
     # The solution to this goes here (and in all of them below...)
     # Set the variable num_bytes to the answer and return it
 
     return num_bytes
+print(num_byte)
+
 
 def lab1Question2(name):
     # Take an input of a name, return True if there is an odd number of characters in the name, False otherwise
@@ -20,6 +22,8 @@ def lab1Question2(name):
 
 
     return is_odd
+
+
 
 def lab1Question3(input_string, input_number):
     # Take in two inputs - a string and a number
