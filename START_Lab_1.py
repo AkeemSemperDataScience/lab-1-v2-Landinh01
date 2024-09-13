@@ -33,8 +33,15 @@ def lab1Question2(name):
 def lab1Question3(input_string, input_number):
     # Take in two inputs - a string and a number
     # Return the character of the string in the index given by number.  If this index does not exist, then return -1.
-    character_at = -1
-
+    #de >> character_at = -1
+    #answer draft
+# Check if the index exists in the string
+    if input_number < len(input_string):
+        # Return the character at the given index
+        character_at = input_string[input_number]
+    else:
+        # If the index is out of range, return -1
+        character_at = -1
     return character_at
 
 def lab1Question4(file_name):
@@ -59,7 +66,14 @@ def lab1Question4(file_name):
 def lab1Question5(list_numbers):
     # Take an input of a list of numbers
     # Return the mode from that list. 
-    mode_of_list = None
+    #de >> mode_of_list = None
+#answer draft
+    from collections import Counter
+    # Count the frequency of each number in the list
+    count = Counter(list_numbers)
+    
+    # Find the mode, which is the number with the highest frequency
+    mode_of_list = count.most_common(1)[0][0]
 
     return mode_of_list
 
