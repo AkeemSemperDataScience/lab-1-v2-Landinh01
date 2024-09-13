@@ -6,12 +6,16 @@ def lab1Question1(input_gb):
     # Set the variable num_bytes to the answer and return it
 
     return num_bytes
-print(num_byte)
+
 
 
 def lab1Question2(name):
     # Take an input of a name, return True if there is an odd number of characters in the name, False otherwise
     # Return None if the input is not a string
+    #answer draft
+    if not isinstance(name, str):
+        return None
+    # đề
     is_odd = None
     #answer draft
     length= len(name)
