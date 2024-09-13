@@ -1,6 +1,7 @@
 def lab1Question1(input_gb):
     # Convert the input of a number of gigabytes to the number of bytes
-    num_bytes = input_gb * 1024**3
+    #answer draft
+    num_bytes = input_gb * 1024 * 1024 * 1024  # 1 GB = 1024^3 bytes
     # Do the work here
     # The solution to this goes here (and in all of them below...)
     # Set the variable num_bytes to the answer and return it
@@ -40,6 +41,18 @@ def lab1Question4(file_name):
     # Take an input of a file name. 
     # Read that file and return a list of all numbers in that file
     list_of_nums = []
+    #answer draft
+    # Open the file in read mode
+    with open(file_name, 'r') as file:
+        # Read each line from the file
+        for line in file:
+            # Split the line into words
+            words = line.split()
+            for word in words:
+                # Check if the word is a number
+                if word.isdigit():
+                    # Add the number to the list (convert to integer)
+                    list_of_nums.append(int(word))
 
     return list_of_nums
 
@@ -54,7 +67,16 @@ def lab1Question6(quarters, dimes, nickels, pennies):
     # Take in 4 inputs - the number of quarters, dimes, nickels, and pennies in a handful
     # Return the total amount in dollars
     # For example, if the handful contains 4 quarters, 3 dimes, 2 nickels, and 1 penny, the function should return 1.41.
-    total = None
+    #de -> total = None
+    #answer draft
+    # Define the values of each type of coin
+    quarter_value = 0.25
+    dime_value = 0.10
+    nickel_value = 0.05
+    penny_value = 0.01
+
+    # Calculate the total value
+    total = (quarters * quarter_value) + (dimes * dime_value) + (nickels * nickel_value) + (pennies * penny_value)
     return total
 
 ## Example of calling a function to test these... 
