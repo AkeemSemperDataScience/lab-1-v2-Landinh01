@@ -14,7 +14,7 @@ def lab1Question2(name):
     # Take an input of a name, return True if there is an odd number of characters in the name, False otherwise
     # Return None if the input is not a string
     #answer draft
-    if not isinstance(name, str):
+    if not isinstance(name, str) or name == "":
         return None
     # đề >> is_odd = None
     #answer draft
