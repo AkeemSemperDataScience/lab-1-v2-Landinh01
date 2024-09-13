@@ -1,11 +1,9 @@
 def lab1Question1(input_gb):
     # Convert the input of a number of gigabytes to the number of bytes
-    #answer draft
-    num_bytes = input_gb * 1024 * 1024 * 1024  # 1 GB = 1024^3 bytes
     # Do the work here
     # The solution to this goes here (and in all of them below...)
     # Set the variable num_bytes to the answer and return it
-
+    num_bytes = input_gb * 1024 * 1024 * 1024
     return num_bytes
 
 
@@ -13,17 +11,14 @@ def lab1Question1(input_gb):
 def lab1Question2(name):
     # Take an input of a name, return True if there is an odd number of characters in the name, False otherwise
     # Return None if the input is not a string
-    #answer draft
     if not isinstance(name, str) or name == "":
         return None
-    # đề >> is_odd = None
-    #answer draft
+    
     length= len(name)
     if length % 2 == 0:
         is_odd = False
     else:
         is_odd = True
-
 
     return is_odd
 
@@ -32,9 +27,7 @@ def lab1Question2(name):
 def lab1Question3(input_string, input_number):
     # Take in two inputs - a string and a number
     # Return the character of the string in the index given by number.  If this index does not exist, then return -1.
-    #de >> character_at = -1
-    #answer draft
-# Check if the index exists in the string
+    # Check if the index exists in the string
     if input_number < len(input_string):
         # Return the character at the given index
         character_at = input_string[input_number]
@@ -43,11 +36,12 @@ def lab1Question3(input_string, input_number):
         character_at = -1
     return character_at
 
+
 def lab1Question4(file_name):
     # Take an input of a file name. 
     # Read that file and return a list of all numbers in that file
     list_of_nums = []
-    #answer draft
+
     # Open the file in read mode
     with open(file_name, 'r') as file:
         # Read each line from the file
@@ -66,7 +60,6 @@ def lab1Question5(list_numbers):
     # Take an input of a list of numbers
     # Return the mode from that list. 
     #de >> mode_of_list = None
-#answer draft
     from collections import Counter
     # Count the frequency of each number in the list
     count = Counter(list_numbers)
@@ -76,19 +69,18 @@ def lab1Question5(list_numbers):
 
     return mode_of_list
 
+
 def lab1Question6(quarters, dimes, nickels, pennies):
     # Take in 4 inputs - the number of quarters, dimes, nickels, and pennies in a handful
     # Return the total amount in dollars
     # For example, if the handful contains 4 quarters, 3 dimes, 2 nickels, and 1 penny, the function should return 1.41.
-    #de -> total = None
-    #answer draft
+    
     # Define the values of each type of coin
     quarter_value = 0.25
     dime_value = 0.10
     nickel_value = 0.05
     penny_value = 0.01
 
-    # Calculate the total value
     total = (quarters * quarter_value) + (dimes * dime_value) + (nickels * nickel_value) + (pennies * penny_value)
     return total
 
