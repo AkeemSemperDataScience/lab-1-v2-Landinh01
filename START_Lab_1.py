@@ -59,7 +59,6 @@ def lab1Question4(file_name):
 def lab1Question5(list_numbers):
     # Take an input of a list of numbers
     # Return the mode from that list. 
-    #de >> mode_of_list = None
     from collections import Counter
     # Count the frequency of each number in the list
     count = Counter(list_numbers)
