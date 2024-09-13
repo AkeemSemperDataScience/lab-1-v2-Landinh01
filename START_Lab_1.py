@@ -16,8 +16,7 @@ def lab1Question2(name):
     #answer draft
     if not isinstance(name, str):
         return None
-    # đề
-    is_odd = None
+    # đề >> is_odd = None
     #answer draft
     length= len(name)
     if length % 2 == 0:
