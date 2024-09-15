@@ -1,5 +1,6 @@
 def lab1Question1(input_gb):
     # Convert the input of a number of gigabytes to the number of bytes
+    num_bytes = None
     # Do the work here
     # The solution to this goes here (and in all of them below...)
     # Set the variable num_bytes to the answer and return it
